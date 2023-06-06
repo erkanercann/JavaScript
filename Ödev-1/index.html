@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Ödev 1</h1>
+    <div class="container">
+
+        <!-- Soru 1 -->
+
+        <table>
+            <caption>Veri Türü Kontrolü</caption>
+            <tr>
+                <td style="width: 50px;">
+                    <label for="name">İsminiz : </label>
+                </td>
+                <td>
+                    <input type="text" id="name" placeholder="İsminiz">
+                </td>
+                <td id="nameText"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Yaşınız : </label>
+                </td>
+                <td>
+                    <input type="text" id="age" placeholder="Yaşınız">
+                </td>
+                <td id="ageText"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">True
+                        <input type="radio" name="boolean" id="true" value="true">
+                    </label>
+                </td>
+                <td>
+                    <label for="">False
+                        <input type="radio" name="boolean" id="false" value="false">
+                    </label>
+                </td>
+                <td id="BooleanText"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Kontrol Et" id="checkIt">
+                </td>
+            </tr>
+        </table>
+        <!-- Soru 2 -->
+
+        <table>
+            <caption>Şehirler</caption>
+            <tr>
+                <td style="width: 60px;">
+                    <label for="">Şehirler : </label>
+                </td>
+                <td id="cityText"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button id="addcity">Ekle</button>
+                </td>
+                <td>
+                    <input type="text" id="newCity">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="chooseCity">Seç</button>
+                </td>
+                <td style="width: 275px;">
+                    <input type="text" id="cityIndex" placeholder="Örneğin 3">
+                </td>
+                <td>
+                    <label for="" id="chooseCityText"></label>
+                </td>
+            </tr>
+        </table>
+        <!-- Soru 3 -->
+        <table>
+            <caption> Aritmetik İşlemler</caption>
+            <tr>
+                <td>
+                    <label for=""> Sayi 1 :
+                        <input type="text" name="" id="number1">
+                    </label>
+                </td>
+            <tr>
+                <td>
+                    <label for=""> Sayi 2 :
+                        <input type="text" name="" id="number2">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" id="result">Sonuç : </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="topla">Topla</button>
+                    <button id="cikar">Çıkar</button>
+                    <button id="carp">Çarp</button>
+                    <button id="böl">Böl</button>
+                    <button id="mod">Mod</button>
+                </td>
+            </tr>
+        </table>
+        <!-- Soru 4 -->
+        <table>
+            <caption>Karşılaştırma Operatörleri</caption>
+            <tr>
+                <td>
+                    <label for=""> Sayi 1 :
+                        <input type="text" name="" id="number3">
+                    </label>
+                </td>
+            <tr>
+                <td>
+                    <label for=""> Sayi 2 :
+                        <input type="text" name="" id="number4">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" id="result2">Sonuç : </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="karsilastir">Karşılaştır</button>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>Atama Operatörleri</caption>
+            <tr>
+                <td style="width: 230px;">
+                    <label for=""> Sayi 1 :
+                        <input type="text" name="" id="number5">
+                    </label>
+                </td>
+                <td>
+                    <button id="ekle2">+2</button>
+                </td>
+            <tr>
+                <td>
+                    <label for=""> Sayi 2 :
+                        <input type="text" name="" id="number6">
+                    </label>
+                </td>
+                <td><button id="cikar5">-5</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" id="result3">Sonuç : </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="toplam">Toplam</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <span class="red"></span>
+    <script src="script.js"></script>
+</body>
+
+</html>
