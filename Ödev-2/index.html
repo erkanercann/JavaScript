@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ödev 2</h1>
+
+    <div class="container">
+        <!-- Soru 1 -->
+        <div class="limit">
+            <h2>Yaş Kontrolü</h2>
+            <input type="submit" value="Submit" id="submitage">
+            <label for="">
+                <input type="text" id="userage" placeholder="Yaşınızı giriniz">
+            </label>
+            <p id="userageText">Yaşınız :</p>
+
+        </div>
+        <!-- Soru  -->
+        <div class="numbercontrol">
+            <h2>Sayı Kontrolü</h2>
+            <button id="numberSubmit">Kontrol</button>
+            <input type="text" name="" id="numberControl" placeholder="Sayi giriniz">
+            <p id="numberControlText">Sonuç :</p>
+        </div>
+        <div class="arithmetic">
+            <h2>Aritmetik İşlem</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Sayi 1 :
+                            <input type="text" name="" id="number1" placeholder="Sayi giriniz">
+                        </label>
+                    </td>
+                    <td rowspan="2">
+                        <p id="result">Sonuç :</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Sayi 2 :
+                            <input type="text" name="" id="number2" placeholder="Sayi giriniz">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="topla">Topla</button>
+                        <button id="cikar">Çıkar</button>
+                        <button id="carp">Çarp</button>
+                        <button id="bol">Böl</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="exam">
+            <h2>Sınav Sonucu</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Vize Notu :</label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="" id="vize" placeholder="Notlarınızı giriniz">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Final Notu :</label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="" id="final" placeholder="Notlarınızı giriniz">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="calExam">Hesapla</button>
+                    </td>
+                    <td>
+                        <p id="ortalama">Ortalamaniz : </p>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <div class="userInfo">
+            <h2>Kullanıcı İsim Soyisim Bilgisi</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">İsminiz : </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="userName" placeholder="İsminiz">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Soyadınız : </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="userLastName" placeholder="Soyadınız">
+                    </td>
+                </tr>
+                <tr style="margin-top: 1rem; display: inline-block;">
+                    <td>
+                        <button id="infoSave">Kaydet</button>
+                    </td>
+                    <td>
+                        <button id="infoCancel">İptal Et</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="shopping">
+            <h2>Alışveriş</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Ürünlerimiz : </label>
+                    </td>
+                    <td>
+                        <select name="" id="urunler">
+                            <option value="Ürünler">Ürünler</option>
+                            <option value="Ekmek">Ekmek</option>
+                            <option value="Yumurta">Yumurta</option>
+                            <option value="Süt">Süt</option>
+                            <option value="Peynir">Peynir</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="urunAra">Hızlı Ürün Ara</button>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="urunAraInput" placeholder="Ürün Ara">
+                    </td>
+                    <td>
+                        <p id="stok"> Stok Durumu:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="ekle">Ekle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fiyat : <b id="fiyat"></b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Bakiyeniz : <b id="bakiye"></b>
+                            <b id="uyarı"></b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="satinAl">Satın Al</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="user">
+            <h2>Kayıt</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">İsminiz :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Soyadınız :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="lastname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Yaşınız :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="kayit">Kaydet</button>
+                    </td>
+                    <td>
+                        <p id="bilgi"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
