@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ödev-3</h1>
+
+    <div class="container">
+        <table>
+            <caption>Kullanici Giriş</caption>
+            <tr>
+                <td>
+                    <label for=""> Kullanici Adi: </label>
+                <td>
+
+                    <input type="text" placeholder="Kullanici Adinizi Giriniz" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""> Şifreniz: </label>
+                </td>
+                <td>
+                    <input type="password" placeholder="Şifrenizi Giriniz" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Giriş" id="login">
+                </td>
+                <td><label for="" id="loginInfo"></label></td>
+            </tr>
+        </table>
+        <table>
+            <caption>Yolcu Gruplandırma</caption>
+            <tr>
+                <td>
+                    İsminiz :
+                </td>
+                <td>
+                    <input type="text" name="" id="passengername" placeholder="İsminiz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Yaşiniz :
+                </td>
+                <td>
+                    <input type="text" name="" id="passengerage" placeholder="Yaşiniz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="passengercontrol">Kontrol</button>
+                </td>
+                <td>
+                    <b id="passengerInfo"></b>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>Hava Durumu</caption>
+            <tr>
+                <td>
+                    <input type="range" name="" id="degree" min="-20" max="35">
+                </td>
+                <td id="weather"></td>
+            </tr>
+        </table>
+        <table>
+            <caption>Kullanici Erişim</caption>
+            <tr>
+                <td>
+                    <label for="">Kullanici Adi:
+                        <input type="text" id="usernamesecond" placeholder="Kullanici adinizi giriniz">
+                    </label>
+                </td>
+                <td>
+                    <button id="login2">Giriş</button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;" id="accessInfo">Giriş :</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Mevsim Kontrolü</caption>
+            <tr>
+                <td>
+                    <select name="" id="months">
+                        <option value="Aylar" disabled selected>Aylar</option>
+                        <option value="aralik">Aralik</option>
+                        <option value="ocak">Ocak</option>
+                        <option value="şubat">Şubat</option>
+                        <option value="mart">Mart</option>
+                        <option value="nisan">Nisan</option>
+                        <option value="mayis">Mayis</option>
+                        <option value="haziran">Haziran</option>
+                        <option value="temmuz">Temmuz</option>
+                        <option value="ağustos">Ağustos</option>
+                        <option value="eylül">Eylül</option>
+                        <option value="ekim">Ekim</option>
+                        <option value="kasim">Kasim</option>
+                    </select>
+                </td>
+                <td id="season">Mevsim :</td>
+            </tr>
+        </table>
+
+        <div>
+            <h3 style="text-align: center;">Öğrenci İndirimi</h3>
+
+            <table class="shopping">
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Ürün Fiyatı</th>
+                    <th>İndirim</th>
+                </tr>
+                <tr>
+                    <td id="productname">Telefon</td>
+                    <td><b id="price">9500</b> TL</td>
+                    <td id="discount"></td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <td><label for="">Adiniz :</label></td>
+                    <td>
+                        <input type="text" name="" id="customername" size="15" placeholder="İsminiz">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="">Mesleğiniz: </label></td>
+                    <td>
+                        <input type="text" name="" id="customerjob" size="15" placeholder="Mesleğiniz">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="İndirim Uygula" id="discountcheck">
+                    </td>
+                    <td id="discountinfo"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
