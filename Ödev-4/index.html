@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ödev 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="container mt-4">
+        <h1 class="text-center">Ödev 4</h1>
+        <div class="row row-gap-4">
+            <div class="col-6 col-md-4">
+                <h4>Array Oluşturma</h4>
+                <input class="form-control" type="number" name="number1" id="number1"
+                    placeholder="Başlangıç sayisi giriniz">
+                <input class="form-control mt-2" type="number" name="number2" id="number2"
+                    placeholder="Bitiş sayisi giriniz" max="50">
+                <div class="mt-3">
+                    <button class="btn btn-primary " id="arrayAdd">Ekle</button>
+                    <span id="arrayText" class="text-break">Sonuç :</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Toplama</h4>
+                <div class="input-group">
+                    <input class="form-control" type="number" name="number3" id="number3" placeholder="Sayi 1">
+                    <input class="form-control" type="number" name="number4" id="number4" placeholder="Sayi 2">
+                </div>
+                <div class="mt-2">
+                    <button class="btn btn-success" id="sumButton">Topla </button>
+                    <span id="sumResult">Sonuç : </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Rastgele Sayilardan Büyüğünü Alma</h4>
+                <input class="form-control" type="number" name="amount" id="amount"
+                    placeholder="Sayi miktarini giriniz">
+                <div class="mt-2">
+                    <button class="btn btn-secondary" id="createRandom">Oluştur</button>
+                    <span id="randomInfo">Rastgele Sayilar:</span>
+                    <div id="maxNumberInfo">En büyük sayi:</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Kullanıcı Giriş</h4>
+                <div class="input-group">
+                    <input type="text" name="username" id="username" class="form-control"
+                        placeholder="Kullanici Adiniz">
+                    <input type="text" name="password" id="password" class="form-control" placeholder="Şifreniz">
+                    <button id="signIn" class="btn btn-success">Giriş</button>
+                </div>
+                <div id="userInfo"></div>
+
+            </div>
+            <div class="col-md-7">
+                <h4>Rezervasyon</h4>
+                <div class="input-group">
+                    <input type="text" name="reservationName" id="reservationName" class="form-control"
+                        placeholder="İsminizi giriniz">
+                    <button class="btn btn-warning" id="create">Rezervasyon Oluştur</button>
+
+                    <button class="btn btn-danger" id="check">Kontrol Et</button>
+                </div>
+                <div id="reservationInfo"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
