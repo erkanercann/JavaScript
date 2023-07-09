@@ -1,0 +1,180 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    row-gap: 32px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    width: 33.3%;
+}
+
+.divOne,
+.divSecond {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid #00aeff;
+    border-radius: 10px;
+}
+
+#selectBox {
+    font-size: 14px;
+    border: 2px solid #00aeff;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#changeColor,
+#addUser,
+#showUsers,
+#getName,
+#changeLocation,
+#grade,
+#gradeUser {
+    background-color: transparent;
+    border: 2px solid #00aeff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font: 15px sans-serif;
+}
+
+#userName {
+    border: 2px solid #00aeff;
+    padding: 10px 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+#userNameInput {
+    border: 2px solid #00aeff;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+#userName::placeholder,
+#userNameInput::placeholder {
+    color: #00aeff;
+    font-size: 16px;
+}
+
+#userName:focus,
+#userNameInput:focus {
+    outline: none;
+
+}
+
+.section-3 li {
+    font-size: 1.2rem;
+}
+
+h2 {
+    color: #00aeff;
+}
+
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.section-5 h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.section-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-image {
+    border-radius: 35px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group #addGrade {
+    border: 2px solid #00aeff;
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0f719e;
+    width: 20%;
+
+}
+
+.input-group #grade {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    width: 40%;
+}
+
+.input-group #gradeUser {
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 40%;
+
+}
+
+.input-group #gradeUser:focus {
+    outline: none;
+}
+
+#grade::-webkit-inner-spin-button,
+#grade::-webkit-outer-spin-button {
+    display: none;
+}
+
+.input-group #grade:focus {
+    outline: none;
+}
+
+#gradeList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+
+}
+
+#gradeList li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+
+
+}
+
+.btn-close {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .section {
+        width: 50%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2c82aca971.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="divOne">Div'in rengini seç</div>
+        <select name="" id="selectBox">
+            <option value="" disabled selected>Bir Renk Seç</option>
+            <option value="#d62828">Red</option>
+            <option value="#a2d2ff">Blue</option>
+            <option value="#588157">Green</option>
+            <option value="#ffd60a">Yellow</option>
+
+        </select>
+    </div>
+    <div class="section">
+        <div class="divSecond">Renk Değiş</div>
+        <button id="changeColor">Button</button>
+    </div>
+    <div class="section section-3">
+        <input type="text" name="" id="userName" placeholder="Kişi Ekle">
+        <ul id="userList">
+            <li></li>
+        </ul>
+        <button id="addUser">Kişi Ekle</button>
+        <button id="showUsers">Kişileri Gizle</button>
+    </div>
+
+    <div class="section">
+        <h2>Merhaba " <span id="userInfo"></span>"</h2>
+        <input type="text" id="userNameInput" placeholder="İsminizi Giriniz">
+        <button id="getName">Button</button>
+    </div>
+
+    <div class="section">
+        <h2>Not Ekle</h2>
+
+        <div class="input-group">
+            <input type="text" id="gradeUser" placeholder="İsminizi Giriniz">
+            <input type="number" id="grade" placeholder="Notunuzu Giriniz">
+            <button id="addGrade">Ekle</button>
+        </div>
+        <ul id="gradeList">
+            <li>İsminiz <span>Notunuz</span>
+                <span></span>
+            </li>
+        </ul>
+
+    </div>
+    <div class="section-5">
+        <h1>Resimleri Konumlandır</h1>
+        <button id="changeLocation">Değiştir</button>
+        <div class="section-images">
+            <img src="https://picsum.photos/200/300?random=1" class="section-image">
+            <img src="https://picsum.photos/200/300?random=2" class="section-image">
+            <img src="https://picsum.photos/200/300?random=3" class="section-image">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
