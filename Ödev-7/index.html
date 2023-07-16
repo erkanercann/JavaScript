@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-register">
+            <div class="login-page">
+                <h1>Welcome <span id="userName"></span></h1>
+                <i class="fa-solid fa-xmark btn-close" onclick="closeButton()"></i>
+            </div>
+
+            <div class="greeting">
+                <div class="greeting-title">Welcome Back!</div>
+                <p class="greeting-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloribus!
+                </p>
+                <a href="#" id="greetingButton" class="btn-secondary">sıgn ın</a>
+            </div>
+            <div class="sign">
+                <!-- Sign In-->
+                <div class="sign-in">
+                    <div id="sigInAlert" class="alert">
+                        <p></p>
+                    </div>
+                    <h2 class="sign-in__title">Sign in to Your Account</h2>
+                    <div class="icons">
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="form">
+                        <form action="" novalidate id="signInForm" autocomplete="off">
+                            <div class="field field-email">
+                                <input type="email" name="signInEmail" id="signInEmail" placeholder="Email">
+                                <i class="fa-solid fa-envelope field-icon"></i>
+                                <p class="error-message signMailError">Please enter a valid email address</p>
+                            </div>
+                            <div class="field field-password">
+                                <input type="password" name="signInPassword" id="signInPassword" placeholder="Password">
+                                <i class="fa-solid fa-lock field-icon"></i>
+                                <p class="error-message signPasswordError">Please enter at least 6 characters for the
+                                    password</p>
+                            </div>
+
+                        </form>
+                        <a href="#" class="btn-primary" id="signIn">sıgn ın</a>
+                    </div>
+                </div>
+
+                <!-- Sign Up -->
+                <div class="sign-up">
+                    <div id="signUpAlert" class="alert">
+                        <p>You already have an account.</p>
+                    </div>
+                    <h3 class="sign-up__title">Create Account</h3>
+                    <div class="icons">
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="icons__wrapper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="form">
+                        <form action="" novalidate id="signUpForm" autocomplete="off">
+                            <div class="field field-fname">
+                                <input type="text" name="signUpName" id="signUpName" placeholder="Name">
+                                <i class="fa-solid fa-user field-icon"></i>
+                                <p class="error-message name-error">Please enter at least 3 characters</p>
+                            </div>
+                            <div class="field field-email">
+                                <input type="email" name="signUpEmail" id="signUpEmail" placeholder="Email">
+                                <i class="fa-solid fa-envelope field-icon"></i>
+                                <p class="error-message email-error">Please enter a valid email address</p>
+                            </div>
+                            <div class="field field-password">
+                                <input type="password" name="signUpPassword" id="signUpPassword" placeholder="Password">
+                                <i class="fa-solid fa-lock field-icon"></i>
+                                <p class="error-message password-error">Please enter at least 6 characters for the
+                                    password</p>
+                            </div>
+                        </form>
+                        <a href="#" class="btn-primary" id="signUp">sıgn up</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
