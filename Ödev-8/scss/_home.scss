@@ -1,0 +1,188 @@
+#header {
+    &-main {
+        background-color: $primary-color;
+        padding: 2rem;
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &-logo {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: $medium-color;
+            }
+
+            &-cart {
+                background: none;
+                border: none;
+                color: $medium-color;
+                font-size: 2rem;
+                cursor: pointer;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    top: -10px;
+                    left: -15px;
+                    font-size: 1rem;
+                    color: $medium-color;
+                    background-color: $secondary-color;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+#main {
+    margin-top: 3rem;
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding: 2rem 1rem;
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+            background-color: #ffff;
+            border-radius: 20px;
+            text-align: center;
+            padding: 1rem;
+            box-shadow:
+                5px 5px 10px rgba(0, 0, 0, 0.2),
+                5px 5px 20px rgba(0, 0, 0, 0.2);
+
+
+            &-image {
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+                text-align: center;
+            }
+
+            &-title {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                width: 350px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &-description {
+                font-size: 0.9rem;
+                white-space: nowrap;
+                width: 350px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+    }
+
+}
+
+
+#cart {
+    .container {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        bottom: 0;
+        width: 500px;
+        overflow: scroll;
+        background-color: #ffff;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.8s;
+
+        .btn-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: $secondary-color;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+            height: 200px;
+            margin-top: 3rem;
+            background-color: #ffff;
+            border: 3px solid lightgray;
+            border-radius: 10px;
+            text-align: center;
+
+
+            &-image {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                align-self: flex-start;
+                margin-top: -50px;
+            }
+
+            &-title {
+                font-size: 0.7rem;
+                margin-bottom: 10px;
+            }
+
+            &-description {
+                font-size: 0.5rem;
+            }
+
+            .cart-buttons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .btn-cart {
+                    background: none;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    border: 1px solid rgb(134, 130, 130);
+                    color: $secondary-color;
+                    font-size: 1rem;
+
+                }
+
+            }
+        }
+
+        .price-total {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .btn-primary {
+                letter-spacing: 2px;
+                background-color: $secondary-color;
+            }
+        }
+
+    }
+}
