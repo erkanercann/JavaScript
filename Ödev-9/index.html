@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+
+    <style>
+        @media print {
+
+            header,
+            main,
+            aside {
+                display: none;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #print {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header-main">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="navbar__logo">LOGO</a>
+                <div class="navbar__inputs">
+                    <input type="text" name="search-item" id="search-item" placeholder="Ne aramiştiniz ?"
+                        class="navbar__inputs--search">
+                    <button id="filter-button" class="navbar__inputs--icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button id="show-shopping-cart" class="navbar__cart ">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="count" class="navbar__cart--count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Products -->
+    <main>
+        <section id="product-section">
+            <div class="products">
+        </section>
+    </main>
+
+    <!-- SideBar -->
+    <aside id="shopping-cart">
+        <div class="sidebar">
+            <button id="sidebar-close" class="sidebar__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="products"></div>
+            <div class="sidebar-total">
+                <p class="sidebar-total__price">
+                    Total:
+                    <span id="total-price">0
+                    </span>
+                    <i class="fa-solid fa-turkish-lira-sign"></i>
+                </p>
+                <button id="buy-products" class="sidebar-total__buy">Satin Al</button>
+            </div>
+
+        </div>
+    </aside>
+    <!-- Print -->
+    <div id="print" style="margin-top: 20rem;">
+        <table class="print-items">
+            <thead>
+                <th>
+                    <tr>
+                        <td>Ürün Adi</td>
+                        <td>Fiyati</td>
+                        <td>Miktar kg</td>
+                    </tr>
+                </th>
+            </thead>
+            <tbody id="print-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Toplam</td>
+                    <td colspan="2" id="print-total-price"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

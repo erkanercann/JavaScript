@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Elma",
+        "price": 23,
+        "picture": "./images/elma.jpg"
+    },
+    {
+        "name": "Biber",
+        "price": 24,
+        "picture": "./images/biber.jpg"
+    },
+    {
+        "name": "Domates",
+        "price": 25,
+        "picture": "./images/domates.jpg"
+    },
+    {
+        "name": "Havuç",
+        "price": 26,
+        "picture": "./images/havuc.jpg"
+    },
+    {
+        "name": "Muz",
+        "price": 27,
+        "picture": "./images/muz.jpg"
+    },
+    {
+        "name": "Şeftali",
+        "price": 28,
+        "picture": "./images/seftali.jpg"
+    },
+    {
+        "name": "Soğan",
+        "price": 29,
+        "picture": "./images/sogan.jpg"
+    },
+    {
+        "name": "Üzüm",
+        "price": 27,
+        "picture": "./images/uzum.jpg"
+    },
+    {
+        "name": "Portakal",
+        "price": 27,
+        "picture": "./images/portakal.jpg"
+    }
+]
