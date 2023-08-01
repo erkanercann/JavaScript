@@ -104,7 +104,7 @@ const addTodoDOM = (text) => {
 
     div.style.backgroundColor = randomColor();
 
-    document.querySelector(".todo-list").appendChild(div);
+    todoList.appendChild(div);
 };
 
 // Random Background Color
