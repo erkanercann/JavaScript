@@ -109,13 +109,6 @@ const addTodoDOM = (text) => {
 
 // Random Background Color
 function randomColor() {
-    // const todos = document.querySelectorAll('.todo');
-
-    // todos.forEach((todo) => {
-    //     todo.style.backgroundColor =
-    //         '#' + Math.floor(Math.random() * 16777215).toString(16);
-    // });
-
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 
