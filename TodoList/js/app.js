@@ -143,7 +143,6 @@ const editTodos = (e) => {
 // Event Listeners
 
 function init() {
-    document.addEventListener("DOMContentLoaded", randomColor);
     document.addEventListener("DOMContentLoaded", checkUI);
     document.querySelector(".todo-add").addEventListener("submit", createTodo);
     todoList.addEventListener("click", removeTodo);
